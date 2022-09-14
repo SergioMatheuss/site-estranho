@@ -1,4 +1,5 @@
 body{
+    padding: 0;
     margin: 0;
     font-family: "Work Sans",sans-serif;
     font-size: 1rem;
@@ -6,95 +7,108 @@ body{
     line-height: 1.5;
     color: #757575;
     background-color: #fff;
+    width: 100%;
 }
 header {
     font-family: "Work Sans",sans-serif;
-    position: fixed;
+    position: relative;
     text-align: left;
-    top: 0;
-    left: 0;
-    width: 100%;
-    max-width: 100%;
+    max-width: max-content;
     height: 40px;
     background-color: #0f2b4a;
     color: #ffffff;
     padding-left: 1cm;
+    max-width: 100%;
 }
 nav {
+    max-width: 100%;
+    height: 40px;
+}
+div.h1{
     display: inline;
-    align-items: right;
-    background-color: #ffffff;
-    color:  #0f2b4a;
-    font-size: 16px;
-    margin-left: 5px;
-    font-weight: 500px;
-
-}
-div.drivin{
-    display: inline-block;
-    padding-top: 20px;
-    padding-left: 3cm;
-    align-items: center;
-    font-size: 32px;
-}
-button{
     position: relative;
-    left: 560px;
-    vertical-align: middle;
-    cursor: pointer;
-    user-select: none;
-    box-sizing: border-box;
-    font-family: "Work Sans",sans-serif;
-    font-weight: 500px;
-    background-color: transparent;
-    border: none;
 
+}
+img.telephono {
+    display: inline;
+    align-items:flex-end;
+    padding-left: 670px;
+}
+img.todos{
+    display: inline;
+    align-items: center;
+    padding-top: 1px;
+}
+div.div1 {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    background-color: white;
+    color: #0f2b4a;
+    font-size: 1rem;
+    font-weight: 2.5rem;
+    width: 100%;
+}
+div.div2{
+    display: flex;
+    align-items: right;
+    padding-left: 20cm;
+
+}
+button {
+    display:fixed;
+    background-color: #fff;
+    border: #fff;
+    color: #0f2b4a;
+    align-items: center;
+    cursor: pointer;
+    font-weight: lighter;
+    font-weight: 750;
+    padding-left: 5px;
+    margin-left: 5px;
 }
 button.gstart {
     display: inline;
     background-color: #F3BD00;
     border-color: #F3BD00;
-    height: 100px;
     text-align: center;
     color: #fff;
-    padding-right: 3rem;
-    padding-left: 3rem;
+    height: 55px;
+    width: 3cm;
+    align-items:center;
 }
-
-a.home {
-    color: #F3BD00;
-    padding-left: 15cm;
-
-}
-a.g.start {
+div.drivin {
     display: flex;
-    background-color: #F3BD00;
-    border: #F3BD00;
-    border-radius: 30px;
+    align-items: flex-end;
+    font-size: 32px;
+    border-right: 5px solid block !important;
+
+}
+div.sec {
+    display: flex;
 }
 div.muié1 {
-    display: block;
+    display: fixed;
     background-blend-mode: soft-light;
     background: url(bild/muié1.jpg);
     background-color: rgb(0, 0, 0, 0.70 );
-    background-position: center, center;
+    background-position: center;
     background-size: cover;
-    align-items: center;
     background-repeat:no-repeat;
-    height: 25cm;
-    width:100%;
+    height: 600px;
+    width: 100%;
 }
-
 p.learn-to-drive {
-    padding-top: 10cm;
+    display: flex;
     border: cover;
     font-size: 3rem;
     font-weight: 700;
-    line-height: 1.2;
     color: #fff;
-
+    padding-top: 5cm;
+    padding-left: 5cm;
 }
 button.learn{
+    display: relative;
     background-color:#F3BD00;
     color:#fff;
     border: #F3BD00;
@@ -102,7 +116,7 @@ button.learn{
     cursor: pointer;
     height: 3rem;
     position: relative;
-    left: 0;
+    left:5cm;
     padding: 15px 30px 15px 30px;
     margin-right: 5px;
 
@@ -115,81 +129,128 @@ button.ourcor{
     cursor: pointer;
     height: 3rem;
     position: relative;
-    left: 0;
+    left: 5cm;
     padding: 15px 30px 15px 30px;
 }
-p.why{
+
+section.flexbox{
+    display: flex;
+    padding-top: 5cm;
+    justify-content: center;
+    align-items: center;
+    
+}
+div.p1{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+div.p2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+h6.why{
+    display: flex;
     color:#F3BD00;
     border: none;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
     font-size: 1rem;
 }
 div.bestd{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     color: #102c4b; 
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
     font-size: 1.5rem;
     font-weight: 700;    
-    column-count: 3;
 }
-img.muié2{  
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 10cm;
-    padding-top: -30cm;
-    align-items: right;
 
+span.blockquote{
+    display: grid;
+    color: #757575;
+    font-size: 1rem;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 10px;
 }
+
 div.fully {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #102c4b;
+    font-size: 1.25rem;
+    font-weight: 700;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+div.online{
     display: flex;
     color: #102c4b;
     font-size: 1.25rem;
     font-weight: 700;
-}
-div.blockquote{
-    position: sticky;
-    color: #757575;
-    font-size: x-small;
-
-    
-
-}
-
-/* img.doisdoente{
-    height: 5px;
-    align-items: right;
-    object-fit: cover;
-    style="width: 200px; height: 200px"
+    flex-wrap: wrap;
     box-sizing: border-box;
-} */
-
-/* }
-div.online{
-    display:block;
-    color: #102c4b;
-    font-size: 1.25rem;
-    font-weight: 700;
-    clear: none;
 
 }
 div.afordable{
-    display:block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #102c4b;
     font-size: 1.25rem;
     font-weight: 700;
-    clear: none;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 
 }
 div.best{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #102c4b;
     font-size: 1.25rem;
     font-weight: 700;
-    clear: both;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 
+} 
+
+div.principal{  
+    display: flex;
+    background:url(bild/muié2.jpg) no-repeat;
+    position: static;
+    background-size: cover;
+    box-sizing: content-box;
+    height: 500px;
+    width: 300px;
+    padding-right: 5cm;
+    
+}
+ img.doisdoente{ 
+    display: flex;
+    box-sizing: border-box;
+    background:no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 10px 1px #fff;
+
+ }
+/* section.pateta{
+    display: flex;
+    box-sizing: border-box;
 } */
+
 sup.meet{
-    display: block;
+    display: flex;
     position: relative;
     left: 670px;
     color:#F3BD00;
@@ -197,23 +258,26 @@ sup.meet{
     align-items: center;
     font-size: 1rem;
     margin-top: -50px;
-    clear: none;
 }
 h1.we-have{
-    display: block;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
     clear: none;
     color: #102c4b;
     font-size: 2rem;
     font-weight: 700;
     position: relative;
-    left: 16cm;
+    left:610px;
 }
 h1.experience{
     color: #102c4b;
+    box-sizing: border-box;
+    align-items: center;
     clear: none;
     font-size: 2rem;
     font-weight: 700;
     position: relative;
-    left: 15cm;
+    left: 570px;
     margin-bottom: 1.5rem;
-}
+} 
